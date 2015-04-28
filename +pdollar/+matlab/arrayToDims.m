@@ -27,6 +27,8 @@ function IC = arrayToDims( I, dims, padEl )
 % Copyright 2014 Piotr Dollar.  [pdollar-at-gmail.com]
 % Licensed under the Simplified BSD License [see external/bsd.txt]
 
+import pdollar.matlab.*;
+
 if( nargin<3 || isempty(padEl)); padEl=0; end
 nd = ndims(I);  siz = size(I);
 [dims,er] = checkNumArgs( dims, size(siz), 0, 1 ); error(er);

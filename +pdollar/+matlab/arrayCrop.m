@@ -25,6 +25,8 @@ function I = arrayCrop( I, strLocs, endLocs, padEl )
 % Copyright 2014 Piotr Dollar.  [pdollar-at-gmail.com]
 % Licensed under the Simplified BSD License [see external/bsd.txt]
 
+import pdollar.matlab.*;
+
 if( nargin<4 || isempty(padEl)); padEl=0; end
 nd = ndims(I);  siz = size(I);
 [strLocs,er] = checkNumArgs(strLocs,size(siz),0,0); error(er);

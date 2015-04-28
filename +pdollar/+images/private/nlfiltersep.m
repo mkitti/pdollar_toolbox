@@ -51,6 +51,8 @@ function I = nlfiltersep( I, dims, shape, fun, varargin )
 % Copyright 2014 Piotr Dollar.  [pdollar-at-gmail.com]
 % Licensed under the Simplified BSD License [see external/bsd.txt]
 
+import pdollar.matlab.*;
+
 params=varargin; nd=ndims(I); siz=size(I);
 [dims,er]=pdollar.matlab.checkNumArgs(dims,size(siz),0,1); error(er);
 assert(any(strcmp(shape,{'same','valid','full','block'})));

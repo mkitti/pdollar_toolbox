@@ -206,6 +206,8 @@ C( Dind ) = vs * sum(B(:));
 function C = convnFreq( A, B, sizA, sizB, shape )
 % Convolution as multiplication in the frequency domain
 
+import pdollar.matlab.*;
+
 siz = sizA + sizB - 1;
 
 % calculate correlation in frequency domain
